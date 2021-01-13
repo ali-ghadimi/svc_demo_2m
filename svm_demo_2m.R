@@ -15,9 +15,9 @@ y <- c(rep(1,200),rep(-1,200))
 
 my_data <- data.frame(x = x_both_groups, y = as.factor(y))
 
-plot(x_both_groups, col = ifelse(y>0,1,2), ylim = c(-2,5), xlim = c(-2, 5))
+plot(x_both_groups, col = ifelse(y > 0,1,2), ylim = c(-2, 5), xlim = c(-2, 5))
 
-legend("topleft",c("Group A (y = -1)","Group B (y = 1)"),col=c(1, 2), pch=1, text.col=c(1,2))
+legend("topleft",c("Group A (y = 1)","Group B (y = -1)"),col=c(1, 2), pch=1, text.col=c(1,2))
 
 
 set.seed(300)
